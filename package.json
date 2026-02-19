@@ -1,0 +1,36 @@
+{
+    "name": "create-tribo-app",
+    "version": "1.0.2",
+    "description": "CLI to bootstrap Tribo Ecosystem Mini Apps",
+    "main": "dist/index.js",
+    "bin": {
+        "create-tribo-app": "./dist/index.js"
+    },
+    "scripts": {
+        "build": "tsup src/index.ts --format cjs --minify --clean",
+        "dev": "tsup src/index.ts --format cjs --watch"
+    },
+    "keywords": [
+        "tribo",
+        "cli",
+        "create-app",
+        "minikit"
+    ],
+    "author": "Tribo",
+    "license": "MIT",
+    "dependencies": {
+        "chalk": "^5.3.0",
+        "commander": "^11.1.0",
+        "execa": "^8.0.1",
+        "fs-extra": "^11.2.0",
+        "inquirer": "^9.2.12",
+        "ora": "^7.0.1"
+    },
+    "devDependencies": {
+        "tsup": "^8.0.0",
+        "typescript": "^5.0.0",
+        "@types/node": "^20.0.0",
+        "@types/fs-extra": "^11.0.0",
+        "@types/inquirer": "^9.0.0"
+    }
+}
