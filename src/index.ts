@@ -10,12 +10,12 @@ import path from 'path';
 const program = new Command();
 
 program
-    .name('create-tribo-app')
+    .name('tribo')
     .description('Bootstrap a new Tribo Ecosystem Mini App')
-    .version('1.0.0')
+    .version('1.0.4')
     .argument('[directory]', 'directory to create the app in')
     .action(async (directory) => {
-        console.log(chalk.bold.blue('\n🚀 Welcome to Tribo Ecosystem SDK CLI\n'));
+        console.log(chalk.bold.green('\n🚀 Welcome to Tribo Labs SDK\n'));
 
         const answers = await inquirer.prompt([
             {
@@ -79,7 +79,7 @@ program
             }
         }
 
-        console.log(chalk.bold.blue('\nHappy hacking! 💙 Tribo\n'));
+        console.log(chalk.bold.green('\nPowered by Tribo Labs 💚\n'));
     });
 
 program.parse();
